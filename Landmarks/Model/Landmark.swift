@@ -25,5 +25,5 @@ struct Landmark: Hashable, Codable {
         var longitude: Double
     }
     
-    private var coordinate: Coordinates
+    private var coordinates: Coordinates
 }
