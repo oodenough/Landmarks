@@ -26,18 +26,18 @@ struct LandmarkRow: View {
     }
 }
 
-#Preview(landmarks[0].name) {
-    LandmarkRow(landmark: landmarks[0])
+#Preview(ModelData().landmarks[0].name) {
+    LandmarkRow(landmark: ModelData().landmarks[0])
 }
 
-#Preview(landmarks[1].name) {
-    LandmarkRow(landmark: landmarks[0])
+#Preview(ModelData().landmarks[1].name) {
+    LandmarkRow(landmark: ModelData().landmarks[1])
 }
 
 #Preview("group preview") {
     Group {
-        LandmarkRow(landmark: landmarks[0])
-        LandmarkRow(landmark: landmarks[1])
+        LandmarkRow(landmark: ModelData().landmarks[0])
+        LandmarkRow(landmark: ModelData().landmarks[1])
     }
 }
 
